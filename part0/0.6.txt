@@ -1,0 +1,23 @@
+note over browser:
+prevents default submit,
+
+user submits the new note.
+submit event handler is called 
+then new note is added to site using 
+javascript without reloading
+end note
+
+
+note over browser:
+function to send data to server is called
+form data is sent with
+content-type: application/json
+for the HTTP POST
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: 201: 'note created'
+note over server:
+server adds the new note to notes on server
+then sends back 201 code saying note is added
+end note
